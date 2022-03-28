@@ -21,7 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: $info-sell-width;
+    min-width: $info-cell-width;
     height: 100%;
     border: 1px solid $border-color;
     background: #f8f9fa;
@@ -58,6 +58,7 @@
     white-space: nowrap;
     outline: none;
 
+
     &.selected {
       border: none;
       outline: 2px solid $primary-color;
@@ -67,11 +68,12 @@
 
   .col-resize, .row-resize {
     position: absolute;
-    right: 0;
     bottom: 0;
-    opacity: 0;
+    right: 0;
     background: $primary-color;
+    opacity: 0;
     z-index: 1000;
+
     &:hover {
       opacity: 1!important;
     }
