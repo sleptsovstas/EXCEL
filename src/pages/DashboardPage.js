@@ -1,6 +1,6 @@
 import {Page} from '@core/Page'
 import {$} from '@core/dom'
-import { createRecordsTable } from '@/pages/dashboard.functions'
+import {createRecordsTable} from './dashboard.functions'
 
 export class DashboardPage extends Page {
   getRoot() {
@@ -10,17 +10,17 @@ export class DashboardPage extends Page {
         <h1>Excel. Панель Управления</h1>
       </div>
 
-    <div class="db__new">
-      <div class="db__view">
-        <a href="#excel/${now}" class="db__create">
-          Новая <br /> Таблица
-        </a>
+      <div class="db__new">
+        <div class="db__view">
+          <a href="#excel/${now}" class="db__create">
+            Новая <br /> Таблица
+          </a>
+        </div>
       </div>
-    </div>
 
-    <div class="db__table db__view">
-      ${createRecordsTable()}
-    </div>
+      <div class="db__table db__view">
+        ${createRecordsTable()}
+      </div>
     `)
   }
 }
